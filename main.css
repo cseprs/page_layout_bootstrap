@@ -1,8 +1,13 @@
-.carousel-inner {
-    width: 100%;
-    height: 100%;
-  }
 
-  .carousel-control-next-icon{
-    background: blue;
-  }
+
+  .footer {
+	    display: block;
+		text-align: center;
+		padding: 3px;
+		background-color: greenyellow;
+		color: white;
+	  }
+    
+  
+
+  

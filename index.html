@@ -1,13 +1,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
+       <meta name="viewport" content="width=device-width,initial-scale=1"> 
    
-        <title>Project on bootsrap</title>
+        <title>Project on bootstrap</title>
     </head>
     <body>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="main.js"></script>
+        <link rel="stylesheet" type="text/css" href="main.css">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -28,206 +29,169 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
+                    <li class="nav-item">
+                       
+                        <select id="languages" name="languages">
+                            <option>Select Language</option>
+                            <option value="en-US">English (United States)</option>
+                            <option value="hi">Hindi - हिन्दी</option></select>
+                    </li>
                 </ul>
             </div>
         </nav>
         
 <!--end of navigation-->
-<!--example of carousel-->
+<!--beginning of carousel-->
+
 <div class="container text-center my-3">
     <div class="row mx-auto my-auto">
-        <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item py-5 active">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="card">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 1</h4>
-                                <p class="card-text">Some make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+             
+                  <div class="carousel-item py-5 active">
+                      <div class="row">
+                          <div class="col-sm-3">
+                              <div class="card">
+                                <div class="card-body">
+                                    <span lang="en" class="multilang"><h4 class="card-title">Card 1</h4></span>
+                                    <span lang="hi" class="multilang"><h4 class="card-title">कार्ड 1</h4></span>
+                                  <p class="card-text">Some make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 2</h4>
-                                <p class="card-text">Some make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Card 2</h4>
+                                  <p class="card-text">Some make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 3</h4>
-                                <p class="card-text">Some make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Card 3</h4>
+                                  <p class="card-text">Some make up the bulk of the card's content.Some make up the bulk of the card's content.Some make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
                               </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                            <div class="card">
-                              <div class="card-body">
-                                <h4 class="card-title">Card 4</h4>
-                                <p class="card-text">Some make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Button</a>
+                          </div>
+                          <div class="col-sm-3">
+                              <div class="card">
+                                <div class="card-body">
+                                  <h4 class="card-title">Card 4</h4>
+                                  <p class="card-text">Some make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Read more</a>
+                                </div>
                               </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-<div class="carousel-item py-5 active">
-    <div class="carousel-item py-5 active">
-        <div class="row">
-            <div class="col-sm-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 1</h4>
-                    <p class="card-text">Some make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
+                          </div>
+                      </div>
                   </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 2</h4>
-                    <p class="card-text">Some make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 3</h4>
-                    <p class="card-text">Some make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Card 4</h4>
-                    <p class="card-text">Some make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                  </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4 col-md-4 col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-
-                <a href="https://wwww.github.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>LOGIN</a>
-                <a href="https://wwww.google.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>SIGN UP</a>
-              </div>
-            </div>
-        </div>
-        <div class="col-lg-8  col-md-8 col-sm-8">
-            <div class="card">
-              <div class="card-body">
-                
-                <img src ="adolescent-adult-dress-friendship.jpg" width="800px" height="200px">
-              </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end of carousel-->
-
-        <!--start of carousel
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                
-            </ol>
-        <div class="carousel-inner">
-      <div class="row align-items-center"> 
-            <div class="col-lg-4 col-md-12">
-                <div class="carousel-item active">
-                    <h1>Lorem Ipsum</h1>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-
-                    <a href="https://wwww.github.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>LOGIN</a>
-                    <a href="https://wwww.google.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>SIGN UP</a>
-                </div>
-            </div>
-
-            <div class="col-lg-8 col-md-12">
-                <div class="carousel-item active">
-                    <img src="adolescent-adult-dress-friendship.jpg" alt="image" width="500" height="500">
-
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-center">
-            <div class="col-lg-4 col-md-12 col-sm-12">
-                <div class="carousel-item">
-                    <h1>Lorem</h1>
-                    <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-
-                    <a href="https://wwww.github.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>LOGIN</a>
-                    <a href="https://wwww.google.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>SIGN UP</a>
-                </div>
-            </div>
-
-            <div class="col-lg-8 col-md-12">
-                <div class="carousel-item">
+                 
+                  <div class="carousel-item py-5">
+                      <div class="row">
+                          <div class="col-sm-4">
+                            <div class= "carousel-inner-structure">
+                              <div class= "carousel-item-rotate">
+                                  <h1>Lorem Ipsum</h1>
+                                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
               
-<!-- Start About Area -->
-<div class="about-area mt-3 bg-f9fbff">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div class="about-image">
-                    <img src="adolescent-adult-dress-friendship.jpg" alt="image" width="650" height="400">
-                </div>
-            </div>
-
-        </div>
+                                  <a href="https://wwww.github.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>LOGIN</a>
+                                  <a href="https://wwww.google.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>SIGN UP</a>
+                                </div>
+                              </div>
+                          </div>
+                          <div class="col-sm-8">
+                            <div class= "carousel-inner-structure">
+                              <div class= "carousel-item-rotate">
+                                  
+                                  <img src ="adolescent-adult-dress-friendship.jpg" width="800px" height="250px">
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                          </div>
+                        </div>
+                      </div>
+      <div class="row">
+          <div class="col-12">
+              <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
+                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
+                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+              </a>
+          </div>
+      </div>
     </div>
-    <!-- Start Partner Area -->
-    <section class="partner-area mt-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-4 col-sm-4 col-md-4">
-                    <div class="d-flex align-items-start">
-                        <img src="placeholder_header.jpg" class="img-fluid atto_image_button_text-bottom" alt="image" width="350" height="473">
-                    </div>
-                </div>
-
-
-
-                <div class="col-lg-4 col-4 col-sm-4 col-md-4">
-                    <div class="single-partner-item">
-                        <img src="placeholder_header.jpg" alt="ad" width="350" height="473" class="img-fluid atto_image_button_text-bottom">
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-4 col-sm-4 col-md-4">
-                    <div class="single-partner-item">
-                        <img src="placeholder_header.jpg" alt="lk" width="350" height="473" class="img-fluid atto_image_button_text-bottom">
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-    <!-- End Partner Area -->
-    <!--checking the multilanguage part 1
-    <h1><span lang="en" class="en">Hello</span> <span lang="zh" class="zh">你好</span></h1>
-    <button onclick="changeLang('en')">English</button><button onclick="changeLang('zh')">Chinese</button>
+    <!--end of carousel-->
     
-    end of multilanguage part 1-->
+  
+  
+
+   <!-- Start Partner Area -->
+   <section class="partner-area mt-8">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12  col-sm-12 col-md-12">
+                <div class="text-center">
+                    <img src="human-jump-luck-success.jpg" alt="ad" width="600" height="400" >
+                </div>
+            </div>
+  
+            
+  
+  </div>
+        </div>
+        </div>
+    
+  </section>
+  <section class="partner-area mt-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-4 col-sm-4 col-md-4">
+                <div class="d-flex align-items-start">
+                    <img src="zan-X_JsI_9Hl7o-unsplash.jpg" class="img-fluid atto_image_button_text-bottom" alt="image" width="350" height="473">
+                </div>
+            </div>
+  
+  
+  
+            <div class="col-lg-3 col-4 col-sm-4 col-md-4">
+                <div class="single-partner-item">
+                    <img src="goran-ivos-TorAcb4AQRc-unsplash.jpg" alt="ad" width="350" height="473" class="img-fluid atto_image_button_text-bottom"  >
+                </div>
+            </div>
+  
+            <div class="col-lg-3 col-4 col-sm-4 col-md-4">
+                <div class="single-partner-item">
+                    <img src="kelly-sikkema-YK0HPwWDJ1I-unsplash.jpg" alt="lk" width="350" height="473" class="img-fluid atto_image_button_text-bottom"  >
+                </div>
+            </div>
+            <div class="col-lg-3 col-4 col-sm-4 col-md-4">
+              <div class="single-partner-item">
+                  <img src="markus-spiske-MI9-PY5cyNs-unsplash.jpg" alt="lk" width="350" height="473" class="img-fluid atto_image_button_text-bottom"  >
+              </div>
+          </div>
+  
+  </div>
+        </div>
+        </div>
+    
+  </section>
+ <!-- Copyright -->
+ <footer>
+ 
+    <p>&copy; PARUL RANI SAGAR<br>
+        <a href="mailto:cseprs@gmail.com">cseprs@gmail.com</a></p>
+
+</footer>
+
+   
 </body>
 </html>
