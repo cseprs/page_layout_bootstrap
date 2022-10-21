@@ -1,11 +1,11 @@
 
 
-  .footer {
+  footer {
 	    display: block;
 		text-align: center;
 		padding: 3px;
-		background-color: greenyellow;
-		color: white;
+		background-color: lightcyan;
+		color: rgb(14, 3, 3);
 	  }
     
   
