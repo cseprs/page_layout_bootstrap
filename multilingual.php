@@ -1,135 +1,90 @@
+<?php
+include('language.php');
+                           $en_select='';
+                           $hi_select='';
+                           $language='';
+
+if((isset($_GET['language']) && $_GET['language']== 'en') || !isset($_GET['language']))
+{
+$en_select='selected';
+$language='en';
+} else {
+    $hi_select='selected';
+    $language='hi';
+
+}
+?>
+
 <html>
     <head>
         <meta charset="UTF-8">
        <meta name="viewport" content="width=device-width,initial-scale=1"> 
    
         <title>Project on bootstrap</title>
-    </head>
-    <body>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="main.js"></script>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!--start of navigation-->
-        <nav class="navbar navbar-expand-md">
-            <a class="navbar-brand" href="#">Logo</a>
-            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="main-navigation">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                       
-                        <select id="languages" name="languages">
-                            <option>Select Language</option>
-                            <option value="en-US">English (United States)</option>
-                            <option value="hi">Hindi - हिन्दी</option></select>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        
-<!--end of navigation-->
-<!--beginning of carousel
+<style>
+#container_block{
+    margin-top:20px;
+}
+#nav_bar{background-color:#fff; padding: 20px;}
+#nav_bar ul{margin:0px; padding:0 px;}
+#nav_bar li {
+    list-style:none; 
+    display: inline;
+    margin-right: 10px;
+    }
+    #nav_bar li a{text-decoration:none; color: #000; font-weight:bold;}
+    #nav_bar li a: hover {text-decoration: underline;}
 
-<div class="container text-center my-3">
-    <div class="row mx-auto my-auto">
-          <div id="myCarousel" class="carousel slide" data-ride="carousel">
-             
-                  <div class="carousel-item py-5 active">
-                      <div class="row">
-                          <div class="col-sm-3">
-                              <div class="card">
-                                <div class="card-body">
-                                    <span lang="en" class="multilang"><h4 class="card-title">Card 1</h4></span>
-                                    <span lang="hi" class="multilang"><h4 class="card-title">कार्ड 1</h4></span>
-                                  <p class="card-text">Some make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-sm-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h4 class="card-title">Card 2</h4>
-                                  <p class="card-text">Some make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-sm-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h4 class="card-title">Card 3</h4>
-                                  <p class="card-text">Some make up the bulk of the card's content.Some make up the bulk of the card's content.Some make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-sm-3">
-                              <div class="card">
-                                <div class="card-body">
-                                  <h4 class="card-title">Card 4</h4>
-                                  <p class="card-text">Some make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Read more</a>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                 
-                  <div class="carousel-item py-5">
-                      <div class="row">
-                          <div class="col-sm-4">
-                            <div class= "carousel-inner-structure">
-                              <div class= "carousel-item-rotate">
-                                  <h1>Lorem Ipsum</h1>
-                                  <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-              
-                                  <a href="https://wwww.github.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>LOGIN</a>
-                                  <a href="https://wwww.google.com" class="default-btn-style-two btn-lg"><i class="flaticon-user"></i>SIGN UP</a>
-                                </div>
-                              </div>
-                          </div>
-                          <div class="col-sm-8">
-                            <div class= "carousel-inner-structure">
-                              <div class= "carousel-item-rotate">
-                                  
-                                  <img src ="adolescent-adult-dress-friendship.jpg" width="800px" height="250px">
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
-                          </div>
-                        </div>
-                      </div>
-      <div class="row">
-          <div class="col-12">
-              <a class="carousel-control-prev text-dark" href="#myCarousel" role="button" data-slide="prev">
-                  <span class="fa fa-chevron-left" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next text-dark" href="#myCarousel" role="button" data-slide="next">
-                  <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-              </a>
-          </div>
-      </div>
-    </div>
-    end of carousel-->
+    #nav_bar select{
+        padding: 5px;
+        
+    }
+
+    .fright{float: right;}
+
+    
+  footer {
+	    display: block;
+		text-align: center;
+		padding: 3px;
+		background-color: lightcyan;
+		color: rgb(14, 3, 3);
+	  }
+
+
+</style>
+
+
+
+    </head>
+
+
+    <body>
+     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+
+        <!--start of navigation-->
+        <div id="container_block">
+<div id ="nav_bar">
+<ul>
+<li><a href="multilingual.php"> <?PHP echo $top_nav[$language] ['0'] ?></a></li>
+<li><a href="#"><?PHP echo $top_nav[$language] ['1'] ?></a></li>
+<li><a href="#"><?PHP echo $top_nav[$language] ['2'] ?></a></li>
+<li class="fright">
+ Language
+<select onchange="set_language()" name="language" id="language">
+
+    <option value="en" <?php echo $en_select?>>EN</option>
+    <option value="hi" <?php echo $hi_select?>>HI</option>
+</select>
+
+</li>
+
+</ul>
+</div>
+</div>
+<!--end of navigation-->
+
     
   <!--beginning of carousel-->
   <div class="container text-center my-3">
@@ -276,6 +231,18 @@
         </div>
     
   </section>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+<script>
+function set_language(){
+var language=jQuery('#language').val();
+window.location.href="http://localhost/multilingual_website/multilingual.php/?language="+language;
+
+}
+</script>
+
+
  <!-- Copyright -->
  <footer>
  
